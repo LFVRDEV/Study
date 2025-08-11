@@ -19,7 +19,7 @@ class Employee extends Model
     use HasFactory;
 
     protected $table = 't_employees';
-    protected $hidden = ['id', 'created_at', 'updated_at'];
+    protected $hidden = ['created_at', 'updated_at'];
 
     public function company() {
         return $this->belongsTo(Company::class);
