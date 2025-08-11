@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('rfc', 20)->unique();
             $table->string('nss', 20)->unique();
             $table->date('birthday')->nullable();
+            $table->string('photo', 200)->nullable();
 
             //CONTACT
             $table->string('email_p', 100)->nullable();
